@@ -1,0 +1,143 @@
+body{
+    margin: 50px 0 0 0;
+    padding: 0;
+}
+#name, #about-person{
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+}
+.header-title{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.header-text{
+    font-family: "Bitcount Ink", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+}
+.header-link{
+    text-decoration: none;
+    color: red;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px 8px ;
+    background-color: blue;
+    &:hover{
+        background-color: red;
+        color: blue;
+    }
+}
+.bg-blue{
+    background: rgba(142, 142, 255, 0.5);
+
+}
+header{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(58, 156, 255, 1);
+    width: 100%;
+    height: 50px;
+    ul{
+        display:flex;
+        justify-content: space-between;
+        padding: 0 16px;
+        list-style: none;
+        li a{
+            text-decoration: none;
+            color: white;
+            transition: 500ms ease-in-out;
+            &:hover{
+                color: red;
+                font-size: 20px;
+            }
+        }
+    }
+}
+.main-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    filter: drop-shadow(8px 7px 3px pink);
+    transition: 300ms ease-in-out;
+    &:hover{
+        scale: 1.2;
+    }
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 16px;
+    background-color: rgba(94, 241, 252, 0.58);
+    width: fit-content;
+    gap: 16px;
+    input{
+        position: relative;
+        border-radius: 8px;
+        padding: 4px 8px;
+        background-color: rgba(178, 63, 235, 0.59);
+        color: #0067ff;
+        filter: drop-shadow(1px 2px 10px red);
+        &::placeholder{
+            color: white;
+        }
+        &:focus{
+            outline: none;
+        }
+        &:valid{
+            background-color: #58ff00;
+        }
+        &:invalid{
+            background-color: #ff0000;
+
+        }
+    }
+    button{
+        align-self: center;
+        padding: 8px 16px;
+        border-radius: 8px;
+        background-color: #0067ff;
+        color: white;
+        cursor: pointer;
+        border:  none;
+        transition: 200ms ease-in-out;
+        &:hover {
+            background-color: #ff0000;
+            color: black;
+        }
+    }
+}
+#about-major{
+    position: relative;
+    transition:  1s ease-in-out;
+    &::after{
+        content: 'Hovering me';
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: auto;
+        background-color: #0067ff;
+        height: 100%;
+        width: 100%;
+        transition:  1s ease-in-out;
+    }
+    &:hover{
+        &:after{
+            display: none;
+        }
+    }
+}

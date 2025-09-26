@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>My First Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Beybit</h1>
+  <h1 id="name">Beybit</h1>
   <h2>Software Engineering</h2>
-  <h3>About Me</h3>
+  <h3 id="about-person">About Me</h3>
   <p>I am student in AITU. My way in IT is Front-End Developer. I know HTML, CSS, JavaScript, Bootstrap, AJAX, Fetch, Vue2. I work in EduCEnter. EduCenter developed site for any courses with LMS.</p>
-  <ol>
+  <ol id="skills">
     <li>Football</li>
     <li>Watching film</li>
     <li>Developing site</li>
@@ -21,8 +25,14 @@
     <li>GitHub</li>
     <li>Apple</li>
   </ul>
+  <!--  Practise task 1-->
+  <a href="https://github.com/dinfy07/Web-Technology">Website for homework </a>
+  <a href="https://www.apple.com/iphone-17/">Iphone</a>
+  <img src="https://avatars.mds.yandex.net/i?id=5f8046918cc79b4acf587683848484e83f9f848c-8187788-images-thumbs&n=13" class="main-image" alt="">
+  <hr>
   <button>Click Me</button>
-  <table>
+  <!-- Assignment 1-->
+  <table id="schedule">
     <thead>
       <tr>
         <th>Subject</th>
@@ -62,7 +72,7 @@
     </tbody>
   </table>
   <p>
-    Today I’m feeling really motivated 💪, a little bit tired 😴, but also very happy 😄 to keep learning HTML!
+    Today I’m feeling really motivated 💪, a little bit tired 😴, but also overjoyed 😄 to keep learning HTML!
   </p>
   <form>
     <input type="text" placeholder="Name" >
@@ -70,5 +80,24 @@
     <input type="text" placeholder="Favorite color">
     <button>Submit</button>
   </form>
+
+  <!-- Assignment 2 -->
+  <header class="bg-blue">
+    <nav class="menu">
+      <ul>
+        <li><a href="#name">Name</a></li>
+        <li><a href="#about-person">Person</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#about-major">Major</a></li>
+      </ul>
+    </nav>
+    <section id="about-major">
+      <h1 class="header-title">About my major</h1>
+      <p class="header-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad distinctio doloribus exercitationem hic laudantium, non nulla quasi veniam! Aliquid assumenda deserunt facilis inventore labore laudantium maiores molestiae perferendis provident tempora.</p>
+      <a href="https://github.com/dinfy07" class="header-link">My GitHub</a>
+      <a href="https://images.steamusercontent.com/ugc/17854221424440595525/543783B601D5A853E3F50907B9722A314DFD92B6/?imw=512&amp;imh=320&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" class="header-link">Image</a>
+    </section>
+  </header>
 </body>
 </html>
